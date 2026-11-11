@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>綠空漫泡，綠川漾沫 | 台中舊城散步與影像企劃</title>
+    <meta name="description" content="「讓煩惱化為泡影，在綠川重拾清醒。」結合台中綠空鐵道歷史廊道與綠川水岸的文化散步企劃，探索1908縱貫線鐵道起點與城市綠意。">
+    <meta name="keywords" content="綠空漫泡, 綠川漾沫, 綠空鐵道, 綠川, 台中舊城區, 1908鐵路通車, 台中景點, 城市散步">
+    <meta name="author" content="綠空漫泡專案小組">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="綠空漫泡，綠川漾沫 | 台中舊城散步與影像企劃">
+    <meta property="og:description" content="讓煩惱化為泡影，在綠川重拾清醒。帶您穿梭台中舊城區的立體歷史走廊。">
+    <meta property="og:type" content="website">
+
+    <!-- 外連 CSS 檔案（放在 css/ 資料夾） -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts & Font Awesome 圖示標籤庫 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 頂部導覽列 -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" onclick="switchPage('home')">
+                <i class="fa-solid fa-water"></i> 綠空漫泡，綠川漾沫
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="切換選單">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" onclick="switchPage('home')"><i class="fa-solid fa-compass"></i> 企劃理念</a></li>
+                <li><a href="#video" class="nav-link" onclick="switchPage('video')"><i class="fa-solid fa-film"></i> 企劃影片</a></li>
+                <li><a href="#about" class="nav-link" onclick="switchPage('about')"><i class="fa-solid fa-train"></i> 綠空鐵道介紹</a></li>
+                <li><a href="#team" class="nav-link" onclick="switchPage('team')"><i class="fa-solid fa-users"></i> 組員介紹</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 主要內容區 -->
+    <main class="main-content">
+
+        <!-- 頁面 1：企劃理念 -->
+        <section id="page-home" class="page-section active">
+            <header class="hero-banner">
+                <span class="hero-subtitle">大二專題研究與影像創作</span>
+                <h1 class="hero-title">綠空漫泡，綠川漾沫</h1>
+                <p class="hero-quote">「讓煩惱化為泡影，在綠川重拾清醒。」</p>
+                <div class="hero-btns">
+                    <a href="#video" class="btn btn-primary" onclick="switchPage('video')"><i class="fa-solid fa-play"></i> 觀看企劃影片</a>
+                    <a href="#about" class="btn btn-outline" onclick="switchPage('about')"><i class="fa-solid fa-map-location-dot"></i> 探索鐵道故事</a>
+                </div>
+            </header>
+
+            <div class="container grid-12">
+                <div class="col-12 text-center" style="margin-bottom: 2rem;">
+                    <h2 class="section-title">企劃核心精神</h2>
+                    <p class="section-subtitle">穿梭於高架舊鐵軌與蜿蜒水岸之間，打造舊城區的沉浸式舒緩體驗</p>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+                        <h3 class="card-title">舊城放空</h3>
+                        <p class="card-desc">將繁忙步調暫時卸下，走上綠空空中走道，俯瞰台中舊城區新舊交融的獨特街景與歲月痕跡。</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-water"></i></div>
+                        <h3 class="card-title">綠川漾沫</h3>
+                        <p class="card-desc">沿著綠川水岸漫步，聽流水潺潺與綠樹搖曳，讓累積的壓力和煩惱隨波化為泡影。</p>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <h3 class="card-title">重拾清醒</h3>
+                        <p class="card-desc">結合歷史廊道與當代景觀設計，引導旅人在綠意盎然的視野中尋回內心的寧靜與清晰。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 頁面 2：企劃影片 -->
+        <section id="page-video" class="page-section">
+            <div class="container">
+                <header class="text-center" style="margin-bottom: 2.5rem;">
+                    <h2 class="section-title">企劃影片展示</h2>
+                    <p class="section-subtitle">點擊播放，跟隨我們的鏡頭一覽綠空鐵道與綠川的漫步故事</p>
+                </header>
+
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/LG6hivBe9GI?si=qwmOiyufHDXEcI22" 
+                                title="綠空漫泡，綠川漾沫 企劃影片" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 頁面 3：綠空鐵道介紹 -->
+        <section id="page-about" class="page-section">
+            <div class="container grid-12">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">綠空鐵道介紹</h2>
+                    <p class="section-subtitle">歷史與綠意交織的立體城市走廊</p>
+                </div>
+
+                <!-- 左側：文字說明與 1908 徽章 -->
+                <div class="col-6">
+                    <div class="info-box">
+                        <h3><i class="fa-solid fa-location-dot"></i> 舊城區的新生廊道</h3>
+                        <p>台中綠空鐵道位於台中舊城區，自 <strong>2016 年鐵路高架化</strong> 後留下的舊鐵道駁坎與路廊，重新改造而成的空中綠色廊道。</p>
+                        <p>廊道全長延伸數公里，成為市民與旅客漫步、認識台中鐵道發展史的重要空間。</p>
+                    </div>
+
+                    <div class="year-badge">
+                        <div class="year-num">1908</div>
+                        <div class="year-text">
+                            <strong>台灣縱貫鐵路全線通車起點</strong><br>
+                            「1908」這個數字代表著 1908 年台灣縱貫鐵路全線通車的歷史起點。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右側：圖片與空間特色 -->
+                <div class="col-6">
+                    <div class="image-box">
+                        <img src="images/green.jpg" alt="台中綠空鐵道景觀" class="about-img">
+                    </div>
+
+                    <div class="info-box" style="margin-top: 1.5rem;">
+                        <h3><i class="fa-solid fa-archway"></i> 空間特色與歷史記憶</h3>
+                        <p>綠空鐵道保留了<strong>舊軌道、舊月台與駁坎牆面</strong>，結合現代景觀設計與植栽，將過去分割城區的鐵道屏障轉化為連結城市的空中綠色動線。</p>
+                        <p>從舊台中火車站後站延伸至綠川與柳川流域，綠空鐵道像一條立體的城市歷史走廊。本篇以空間特色與建議散步順序，介紹這條充滿歷史記憶與綠意的新生鐵道。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 頁面 4：組員介紹 -->
+        <section id="page-team" class="page-section">
+            <div class="container grid-12">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">專題製作團隊</h2>
+                    <p class="section-subtitle">感謝所有組員的用心投入與分工合作</p>
+                </div>
+
+                <div class="col-3">
+                    <article class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-camera"></i></div>
+                        <div class="member-name">李舒涵</div>
+                        <div class="member-role">組長 / 拍攝</div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-clapperboard"></i></div>
+                        <div class="member-name">程品瑜</div>
+                        <div class="member-role">導演</div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="member-name">張季茹</div>
+                        <div class="member-role">企劃</div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <div class="member-name">張佳騏</div>
+                        <div class="member-role">企劃</div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-scissors"></i></div>
+                        <div class="member-name">尤瑞德</div>
+                        <div class="member-role">劇務 / 剪輯</div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-clipboard-user"></i></div>
+                        <div class="member-name">與那嶺藍</div>
+                        <div class="member-role">劇務</div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-video"></i></div>
+                        <div class="member-name">張庭瑄</div>
+                        <div class="member-role">拍攝</div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="team-card">
+                        <div class="avatar"><i class="fa-solid fa-palette"></i></div>
+                        <div class="member-name">梁睿桐</div>
+                        <div class="member-role">美術</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 大二課程專題「綠空漫泡，綠川漾沫」專案小組 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS 頁面切換控制 -->
+    <script>
+        function switchPage(pageId) {
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(sec => sec.classList.remove('active'));
+
+            const targetSection = document.getElementById('page-' + pageId);
+            if(targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === '#' + pageId) {
+                    link.classList.add('active');
+                }
+            });
+
+            document.getElementById('navMenu').classList.remove('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
